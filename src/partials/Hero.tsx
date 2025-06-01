@@ -1,34 +1,25 @@
-import {
-  GradientText,
-  HeroAvatar,
-  HeroSocial,
-  Section,
-} from 'astro-boilerplate-components';
+import { HeroAvatar, HeroSocial, Section } from 'astro-boilerplate-components';
 
 const Hero = () => (
   <Section>
     <HeroAvatar
-      title={
-        <>
-          Hi there, I'm <GradientText>Ixartz</GradientText> 👋
-        </>
-      }
+      title={<>Welcome to my personal webpage</>}
       description={
         <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            malesuada
-          </a>{' '}
-          nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet,{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            consectetur
-          </a>{' '}
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          The purpose of this site is to discuss current projects and to try out
+          current web frameworks. It is built with{' '}
+          <a
+            className="text-cyan-400 hover:underline"
+            href="https://astro.build/"
+          >
+            AstroJS
+          </a>
+          {'. '}
         </>
       }
       avatar={
         <img
-          className="h-80 w-64"
+          className="h-96 w-96"
           src="/assets/images/avatar.svg"
           alt="Avatar image"
           loading="lazy"
